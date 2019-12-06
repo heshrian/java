@@ -1,0 +1,81 @@
+src - create new class
+psvm - public class static void main
+sout - System.out.printLn("string to print");
+
+System.out.println(array[index]); elem
+System.out.println(Arrays.toString(int array); egesz array
+
+enhanced for loop(foreach?):
+for (Type valami: VALAMIBEN)
+
+
+Array:
+int NewArray[]= new int[size];  new integer array with fixed size
+if element on index not defined it will be 0;
+
+Array list (dinamic array):
+variable size
+ArrayList<type "optioanl?"> name = new Arraylist<>(); (collection of Integer, String etc  as name)
+name.add(value);
+name.get(index)== name[i];
+grade.remove(index);
+toArray.addAll(from array);
+array.contains(valueWeNeed);
+
+arraylist to array: Object[] newArray = new Object[size];
+newArray = oldArray.toArray();
+array doesn't have length, it has a size()!!!!
+
+hashmap:
+key-value;
+Hashmapp<Type of Key, Type of Value> name = new HashMap <Type of Key, Type of Value>();
+
+name.put(Key->according to type, Value - > according to type)
+
+iteration:
+name.keySet() -> keys of hashmap;
+for (Type key: name.keySet())
+	name.get(key) -> value for the key;
+	name.containsKey(key we need);
+
+	
+
+
+
+fori + tab -> for loop
+
+functions: 
+public class valami {
+psvm {
+functionName(param)
+}
+public static RETURN TYPE(int, String) functionName(param){
+logic
+}
+
+}
+fileIO:
+scan in integer
+Scanner scanner = new Scanner((System.in));
+        int divisor = scanner.nextInt();
+	-> userinput intellij "console" number
+scan in string
+Scanner task = new Scanner((System.in));
+            String taskToAdd = task.nextLine();
+
+string manipulation:
+startsWith()
+endsWith()
+split()
+length()
+replace(char to change, char for)
+charAt(index)
+indexOf('character', optional which index from) only first
+substringg(indexfrom,indexto)  cut out from the string
+trim() removes white space
+
+string builder!! 
+todo : List/ArrayList/Stream difference, swap between!! 
+
+
+
