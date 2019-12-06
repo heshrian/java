@@ -1,0 +1,35 @@
+Classes:
+create class
+public class Classname {
+
+String vmi;
+int vmimas;
+
+public Classname() { 
+ -> constructor
+}
+
+public void method() {
+	do stuff
+}
+
+create object (instance in JS?)
+public class vmvi
+psvm
+Classname varName;
+varName.vmi = "vmi"; (from Classname fields);
+varName.vmimas = 8;
+varName.method() -> will do stuff;
+
+
+Inheritance:
+
+class Cycle{
+valami value
+}
+
+class Bicycle extends Cycle{
+valami value igaz erre is
+}
+
+
