@@ -7,7 +7,7 @@ import java.util.Scanner;
 
     public class Todo {
 
-        static List<String> tasks;
+        static ArrayList<String> tasks;
         static ArrayList<String> isComplete;
         public static void main(String[] args) {
             System.out.println(TodoMethods.info());
