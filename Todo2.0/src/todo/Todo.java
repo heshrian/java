@@ -7,8 +7,8 @@ import java.util.Scanner;
 
     public class Todo {
 
-        static ArrayList<String> tasks;
-        static ArrayList<String> isComplete;
+        static List<String> tasks;
+        static List<String> isComplete;
         public static void main(String[] args) {
             System.out.println(TodoMethods.info());
             tasks = new ArrayList<>();
@@ -18,7 +18,7 @@ import java.util.Scanner;
 
         public static void operations() {
             if (tasks.size()<1){
-                TodoMethods.readEmIn((ArrayList<String>) tasks, isComplete);
+                TodoMethods.readEmIn((ArrayList<String>) tasks,(ArrayList<String>) isComplete);
             }
             System.out.println("Please type in the commands to tell me what to do!(5 is to list the commands)");
             Scanner scanner = new Scanner((System.in));
@@ -26,15 +26,15 @@ import java.util.Scanner;
 
             switch (inputOperator) {
                 case 1:
-                    TodoMethods.listTodos((ArrayList<String>) tasks, isComplete);
+                    TodoMethods.listTodos((ArrayList<String>) tasks,(ArrayList<String>) isComplete);
                     operations();
                     break;
                 case 2:
-                    TodoMethods.addTodo((ArrayList<String>) tasks, isComplete);
+                    TodoMethods.addTodo((ArrayList<String>) tasks,(ArrayList<String>) isComplete);
                     operations();
                     break;
                 case 3:
-                    TodoMethods.deleteTodo((ArrayList<String>) tasks, isComplete);
+                    TodoMethods.deleteTodo((ArrayList<String>) tasks,(ArrayList<String>) isComplete);
                     operations();
                     break;
                 case 4:
@@ -47,7 +47,7 @@ import java.util.Scanner;
                     break;
                 case 6:
                     System.out.println("Bye bye");
-                    TodoMethods.writeThemIn((ArrayList<String>) tasks, isComplete);
+                    TodoMethods.writeThemIn((ArrayList<String>) tasks,(ArrayList<String>) isComplete);
                     return;
             }
         }
