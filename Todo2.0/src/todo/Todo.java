@@ -10,6 +10,7 @@ import java.util.Scanner;
         static List<String> tasks;
         static List<String> isComplete;
         public static void main(String[] args) {
+//            TodoMethods info = new TodoMethods(); // kulon class es stb
             System.out.println(TodoMethods.info());
             tasks = new ArrayList<>();
             isComplete = new ArrayList<>();
@@ -52,5 +53,7 @@ import java.util.Scanner;
             }
         }
     }
+
+
 
 
