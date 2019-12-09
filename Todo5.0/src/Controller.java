@@ -14,6 +14,7 @@ public class Controller {
 
         switch (inputOperator) {
             case 1:
+                fileIO.readFile();
                 this.todos.listTodos();
                 this.operations();
                 break;

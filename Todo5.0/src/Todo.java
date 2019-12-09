@@ -1,9 +1,10 @@
 public class Todo {
     public String todo;
-    public Boolean isCompleted = false;
+    public Boolean isCompleted;
 
-    public Todo(String todo){
+    public Todo(String todo, Boolean isCompleted){
         this.todo= todo;
+        this.isCompleted = isCompleted;
     }
     public void completeTodo(){
         this.isCompleted = true;

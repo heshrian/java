@@ -13,7 +13,7 @@ public class Todos {
         }
     }
     public void addTask(){
-        Todo addTodo = new Todo(scannerData.getString());
+        Todo addTodo = new Todo(scannerData.getString(), false);
         todoList.add(addTodo);
     }
     public void deleteTask(){
