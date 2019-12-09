@@ -7,7 +7,6 @@ import java.util.Scanner;
 public class TodoList {
     static List<String> tasks = new ArrayList<>();
     static List<String> isComplete = new ArrayList<>();
-    static Operations operation = new Operations();
 
     public String info(){
         return "Command Line Todo application\n" +
@@ -22,43 +21,42 @@ public class TodoList {
                 "    6   Thank you, goodbye!\n";
     }
     public void listTask(){
-        if (this.tasks.size() < 1){
+        if (tasks.size() < 1){
             System.out.println("Please add TODOs");
         }
-        for (int i = 0; i < this.tasks.size(); i++) {
-            System.out.println((i+1) + " - " + this.isComplete.get(i) + " " + this.tasks.get(i));
+        for (int i = 0; i < tasks.size(); i++) {
+            System.out.println((i+1) + " - " + isComplete.get(i) + " " + tasks.get(i));
         }
     }
     public void addTask(){
-        System.out.println("Please type in a new thing Todo");
         Scanner task = new Scanner((System.in));
         Todo addTodo = new Todo(task.nextLine());
-        this.isComplete.add("[ ]");
-        this.tasks.add(addTodo.todo);
+        isComplete.add("[ ]");
+        tasks.add(addTodo.todo);
     }
     public void deleteTask(){
         System.out.println("Please give me the number of the task to remove from the list");
         Scanner remover = new Scanner((System.in));
         int removeIt = remover.nextInt();
-        this.tasks.remove(removeIt - 1);
-        this.isComplete.remove(removeIt - 1);
+        tasks.remove(removeIt - 1);
+        isComplete.remove(removeIt - 1);
     }
     public void completeTask(){
         System.out.println("Please give me the number of the task to complete");
         Scanner todoNo = new Scanner((System.in));
         int todoNumber = todoNo.nextInt();
-        this.isComplete.set(todoNumber - 1, "[x]");
+        isComplete.set(todoNumber - 1, "[x]");
     }
     public void readTodoList(){
         try{
             Scanner taskLine = new Scanner(new File("tasks.txt"));
             while (taskLine.hasNext()){
-                this.tasks.add(taskLine.nextLine());
+                tasks.add(taskLine.nextLine());
             }
             taskLine.close();
             Scanner completeLine = new Scanner(new File("complete.txt"));
             while (completeLine.hasNext()){
-                this.isComplete.add(completeLine.nextLine());
+                isComplete.add(completeLine.nextLine());
             }
             completeLine.close();
         } catch (Exception e){
@@ -82,8 +80,4 @@ public class TodoList {
             System.out.println(e);
         }
     }
-    public void todoOperations() {
-        this.operation.operations();
-    };
-
 }

@@ -1,22 +1,18 @@
 import java.util.Scanner;
 
-public class Operations {
-    TodoList todos;
-    public Operations(TodoList todos){
+public class Controller {
+    static Todos todos;
+    static ScannerData scannerData= new ScannerData();
+    public Controller(Todos todos){
         this.todos = todos;
     }
-
     public void operations(){
-        if (this.todos.tasks.size()< 1){
-            this.todos.readTodoList();
-        }
         System.out.println("Please type in the commands to tell me what to do!(5 is to list the commands)");
-        Scanner scanner = new Scanner((System.in));
-        int inputOperator = scanner.nextInt();
+        int inputOperator = todos.scannerData.getInt();
 
         switch (inputOperator) {
             case 1:
-                this.todos.listTask();
+                this.todos.listTodos();
                 this.operations();
                 break;
             case 2:
@@ -28,7 +24,7 @@ public class Operations {
                 this.operations();
                 break;
             case 4:
-                this.todos.completeTask();
+                this.todos.completeTodo();
                 this.operations();
                 break;
             case 5:
@@ -37,7 +33,8 @@ public class Operations {
                 break;
             case 6:
                 System.out.println("Bye bye");
-                this.todos.writeTodoList();
+//                this.todos.writeTodoList();
         }
     }
+
 }

@@ -5,4 +5,7 @@ public class Todo {
     public Todo(String todo){
         this.todo= todo;
     }
+    public void completeTodo(){
+        this.isCompleted = true;
+    }
 }
