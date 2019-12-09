@@ -9,6 +9,7 @@ public class Todo {
 
     static List<String> tasks = new ArrayList<>();
     static List<String> isComplete = new ArrayList<>();
+    static Operations operation = new Operations();
 
     public String info(){
      return "Command Line Todo application\n" +
@@ -22,6 +23,7 @@ public class Todo {
              "    5   Show command line argument\n" +
              "    6   Thank you, goodbye!\n";
     }
+
     public void listTask(){
         if (this.tasks.size() < 1){
             System.out.println("Please add TODOs");
@@ -66,6 +68,7 @@ public class Todo {
         } catch (Exception e){
             System.out.println(e);
         }
+        this.info();
     }
     public void writeTodoList(){
         try {
@@ -83,39 +86,7 @@ public class Todo {
             System.out.println(e);
         }
     }
-    public void operations(){
-        if (tasks.size()< 1){
-            this.readTodoList();
-        }
-        System.out.println("Please type in the commands to tell me what to do!(5 is to list the commands)");
-        Scanner scanner = new Scanner((System.in));
-        int inputOperator = scanner.nextInt();
-
-        switch (inputOperator) {
-            case 1:
-                this.listTask();
-                this.operations();
-                break;
-            case 2:
-                this.addTask();
-                this.operations();
-                break;
-            case 3:
-                this.deleteTask();
-                this.operations();
-                break;
-            case 4:
-                this.completeTask();
-                this.operations();
-                break;
-            case 5:
-                System.out.println(this.info());
-                this.operations();
-                break;
-            case 6:
-                System.out.println("Bye bye");
-                this.writeTodoList();
-                return;
-        }
+    public void todoOperations() {
+        this.operation.operations();
     }
 }
