@@ -8,4 +8,13 @@ public class Todo {
     public void completeTodo(){
         this.isCompleted = true;
     }
+    public String toString(){
+        String complete;
+        if (this.isCompleted){
+            complete = " [x] ";
+        } else {
+            complete = " [ ] ";
+        }
+        return complete + this.todo;
+    }
 }
