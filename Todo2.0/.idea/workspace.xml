@@ -2,10 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e2f2b20-ea3d-4845-82ec-52e05d71feb1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Todo3.0/src/Operations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Todo4.0/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Todo4.0/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Todo4.0/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Todo4.0/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Todo4.0/Todo4.0.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Todo4.0/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Todo4.0/src/Operations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Todo4.0/src/Todo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Todo4.0/src/TodoList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Todo3.0/out/production/Todo3.0/Todo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Todo3.0/out/production/Todo3.0/Todo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Todo3.0/src/Todo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Todo3.0/src/Todo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
