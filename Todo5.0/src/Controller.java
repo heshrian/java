@@ -1,14 +1,14 @@
 import java.util.Scanner;
 
 public class Controller {
-    static Todos todos;
-    static ScannerData scannerData= new ScannerData();
+    Todos todos;
+    ScannerData scannerData= new ScannerData();
     public Controller(Todos todos){
         this.todos = todos;
     }
     public void operations(){
         System.out.println("Please type in the commands to tell me what to do!(5 is to list the commands)");
-        int inputOperator = todos.scannerData.getInt();
+        int inputOperator = scannerData.getInt();
 
         switch (inputOperator) {
             case 1:
