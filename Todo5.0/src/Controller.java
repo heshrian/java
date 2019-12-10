@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Controller {
@@ -8,19 +9,19 @@ public class Controller {
         this.todos = todos;
     }
 
-    public void operations(){
+    public void operations() throws IOException {
         System.out.println("Please type in the commands to tell me what to do!(5 is to list the commands)");
         int inputOperator = scannerData.getInt();
 
         switch (inputOperator) {
             case 1:
-                fileIO.readFile();
+//                fileIO.readFile();
                 this.todos.listTodos();
                 this.operations();
                 break;
             case 2:
                 System.out.println("Please type in a new thing Todo");
-                this.todos.addTask();
+                todos.addTask();
                 this.operations();
                 break;
             case 3:

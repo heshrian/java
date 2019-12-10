@@ -1,7 +1,13 @@
-    public class Main {
+import java.io.IOException;
+
+public class Main {
         public static void main(String[] args) {
             Todos myTodoList = new Todos();
-            Controller operation = new Controller(myTodoList);
-            operation.operations();
+            Controller menu = new Controller(myTodoList);
+            try {
+                menu.operations();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }

@@ -2,26 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e2f2b20-ea3d-4845-82ec-52e05d71feb1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Todo5.0/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Todo5.0/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Todo5.0/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Todo5.0/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Todo5.0/Todo5.0.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Todo5.0/src/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Todo5.0/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Todo5.0/src/Todo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Todo5.0/src/Todos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.javaClass.txt.swp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Todo4.0/complete.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Todo4.0/complete.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Todo4.0/out/production/Todo4.0/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Todo4.0/out/production/Todo4.0/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Todo4.0/out/production/Todo4.0/Operations.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Todo4.0/out/production/Todo4.0/Operations.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Todo4.0/out/production/Todo4.0/TodoList.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Todo4.0/out/production/Todo4.0/TodoList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Todo4.0/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Todo4.0/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Todo4.0/src/Operations.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Todo4.0/src/Operations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Todo4.0/src/Todo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Todo4.0/src/Todo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Todo4.0/src/TodoList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Todo4.0/src/TodoList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Todo4.0/tasks.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Todo4.0/tasks.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Todo5.0/out/production/Todo5.0/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Todo5.0/out/production/Todo5.0/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Todo5.0/out/production/Todo5.0/FileManipulate.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Todo5.0/out/production/Todo5.0/FileManipulate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Todo5.0/out/production/Todo5.0/ScannerData.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Todo5.0/out/production/Todo5.0/ScannerData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Todo5.0/src/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Todo5.0/src/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Todo5.0/src/FileManipulate.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Todo5.0/src/FileManipulate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Todo5.0/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Todo5.0/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Todo5.0/src/ScannerData.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Todo5.0/src/ScannerData.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
