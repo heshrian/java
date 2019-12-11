@@ -41,6 +41,7 @@ public class Controller {
             case 6:
                 System.out.println("Bye bye");
                 fileIO.writeFile();
+                scannerData.closeScanner();
         }
     }
 

@@ -1,18 +1,24 @@
+import java.util.NoSuchElementException;
 import java.util.Scanner;
 
 public class ScannerData {
-
+    Scanner scanner = null;
+    String returnString = null;
+    int returnInt;
     public String getString(){
-        Scanner scanner = new Scanner((System.in));
-        String returnValue = scanner.nextLine();
-//        scanner.close();
-        return returnValue;
+        scanner = new Scanner((System.in));
+        returnString = scanner.nextLine();
+        return returnString;
     }
+
     public Integer getInt(){
-        Scanner scanner = new Scanner((System.in));
-        int returnValue = scanner.nextInt();
-//        scanner.close();
-        return returnValue;
+        scanner = new Scanner((System.in));
+        if (scanner.hasNextInt()){
+            returnInt = scanner.nextInt();
+        }
+        return returnInt;
     }
-//    scanner.close();
+    public void closeScanner(){
+        this.scanner.close();
+    }
 }
